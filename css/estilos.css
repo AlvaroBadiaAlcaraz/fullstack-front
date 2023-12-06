@@ -1,0 +1,20 @@
+.cabecera{
+    display: inline-block;
+    height: 50px;
+}
+
+*{
+    font-family: verdana;
+}
+
+.datos_cliente{
+    background-color: #55ccff;
+}
+
+.datos_pedido{
+    background-color: #40ccbb;
+}
+
+.param{
+    margin: 20px;
+}
