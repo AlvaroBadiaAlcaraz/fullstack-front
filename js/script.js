@@ -23,5 +23,25 @@ $(function(){
 
     });
 
+    
+
+    $("#tamaño").change( function() {
+
+        console.log(this.value)
+        tamano = this.value
+
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:5000/checksize",
+            data: {
+                size: tamano,
+            },
+            success: function (result) {
+            $("#disponibilidad").text(result);
+            }
+            });
+
+      });
+
 });
 
